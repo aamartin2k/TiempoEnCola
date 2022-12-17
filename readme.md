@@ -88,3 +88,6 @@ Describimos una función que recibe el número de minuto actual (entero > 0) y r
  Se modifica el método HallarSolucion para hacer una iteración en la lista y determinar el cajero correspondiente cuando la posición del cliente se hace cero.
  
  **Ver código de clase SolucionMejorada.**
+ 
+### Comentarios
+ Con un poco de análisis matemático, no es difícil demostrar que la función CajerosLibresEnMinuto() siempre retorna la misma secuencia de valores. Esto puede ser de utilidad en caso de necesitar optimizar el código. Se puede aplicar memoización para pre calcular y almacenar los resultados para los primeros N minutos en un diccionario y despues recuperar rápidamente la respuesta. El método GenerarSecuencia() es una muestra.
